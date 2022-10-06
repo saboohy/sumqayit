@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'SPP';
+    src: url('../fonts/source-sans-pro.regular.ttf');
+}
+@font-face {
+    font-family: 'SPP Bold';
+    src: url('../fonts/source-sans-pro.semibold.ttf');
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+}
+body{
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: 'SPP';
+}
+
+.block-container,
+.row,
+.col-12{
+    width: 100%;
+}
+.container{
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+.row{
+    display: flex;
+}
+.wrapped{
+    flex-wrap: wrap;
+}
+.items-center-x{
+    justify-content: center;
+}
+.items-right{
+    justify-content: flex-end;
+}
+.items-center-y{
+    align-items: center;
+}
+.col-auto{
+    width: max-content;
+}
+.col-1{
+    width: 8.333333333%;
+}
+.col-2{
+    width: 16.666666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.333333332%;
+}
+.col-5{
+    width: 41.666666665%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.333333331%;
+}
+.col-8{
+    width: 66.666666664%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33333333%;
+}
+.col-11{
+    width: 91.666666663%;
+}
+
+.nav{
+    list-style: none;
+}
+.nav-x{
+    display: flex;
+}
+.nav-y > li > a{
+    display: block;
+}
+.nav-x > li > a{
+    display: inline-block;
+}
