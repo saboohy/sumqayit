@@ -6,6 +6,10 @@
     font-family: 'SPP Bold';
     src: url('../fonts/source-sans-pro.semibold.ttf');
 }
+@font-face {
+    font-family: 'SPP Light';
+    src: url('../fonts/source-sans-pro.light.ttf');
+}
 *{
     padding: 0;
     margin: 0;
@@ -40,6 +44,9 @@ body{
 }
 .wrapped{
     flex-wrap: wrap;
+}
+.space-between-x{
+    justify-content: space-between;
 }
 .items-center-x{
     justify-content: center;

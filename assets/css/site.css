@@ -3,15 +3,16 @@
 .site-header{
     background: #7d438f;
     background-image: url('../img/green-dust-and-scratches.png');
+    height: 2.5cm;
 }
 .site-header > .row > div{
-    padding: 24px;
+    padding: 8px;
 }
 #search{
     width: max-content;
     background: #fff;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 #search > input{
     width: 200px;
@@ -19,7 +20,7 @@
 #search > input, #search > button{
     border: none;
     outline: none;
-    padding: 12px;
+    padding: 8px;
     background: none;
     color: #7d438f;
 }
@@ -31,8 +32,8 @@
 #site-header-title{
     color: #fff;
     font-family: 'SPP Bold';
-    font-size: 24px;
-    width: 340px;
+    font-size: 18px;
+    width: 280px;
 }
 .site-nav > li > a{
     padding: 16px;
@@ -54,6 +55,7 @@
     background: #fff;
     position: sticky;
     top: 0;
+    z-index: 100;
 }
 
 .navbar-open-dropdown:hover .navbar-dropdown{
@@ -89,7 +91,7 @@
     background-position: center;
 }
 .site-slider-container{
-    height: 600px;
+    height: 13cm;
     background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(125, 67, 143, 0.6), rgba(125, 67, 143, 1));
     display: flex;
     align-items: flex-end;
@@ -99,18 +101,24 @@
 }
 .site-slider-container > div > h1{
     color: #fff;
-    font-family: 'SPP Bold';
+    font-family: 'SPP Light';
+    font-size: 32px;
 }
 .site-slider-container > div > p{
     color: #fff;
+    
 }
 .pad-8{
     padding: 8px;
 }
+.pad-8-x{
+    padding: 0px 8px;
+}
 
 .post{
+    height: 8cm;
     overflow: hidden;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     background: #fff;
     position: relative;
     /* box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2); */
@@ -120,24 +128,206 @@
 }
 .post-title{
     position: absolute;
-    background: rgba(125, 67, 143, 0.6);
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(125, 67, 143, 0.2), rgba(125, 67, 143, 1));
     width: 100%;
     bottom: 0;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
 }
 .post-title > a{
     color: #fff;
-    font-family: 'SPP Bold';
-    font-size: 20px;
+    font-family: 'SPP';
+    font-size: 18px;
 }
-.post-title{
-    padding: 8px;
-}
+
 .anons{
-    background: #fff;
-    color: #7d438f;
+    background: #7d438f;
+    height: 1.2cm;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'SPP Light';
+    font-size: 32px;
+    /* padding: 16px; */
+    background-image: url('../img/green-dust-and-scratches.png');
+    border-radius: 4px;
+}
+
+.clearfix{
+    width: 100%;
+    height: 1.2cm;
+    /* padding: 16px 0; */
+}
+
+.academy{
+    width: 100%;
+    height: 2.5cm;
+    background: #7d438f;
+    /* background: linear-gradient(to top right, #7b4a8a, #7d438f, #b961d4); */
+    /* border-radius: 4px; */
     overflow: hidden;
 }
-.anons >  marquee{
+.academy-container{
+    width: 100%;
+    /* background-image: url('../img/green-dust-and-scratches.png'); */
+}
+.academy-container > .row{
+    height: 2.5cm;
+}
+.academy-trainers{
+    width: 100%;
+    height: 2.5cm;
+    background-image: url('../img/coaches.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.academy-trainers-container{
+    height: 2.5cm;
+    width: 100%;
+    background: linear-gradient(to right, rgba(125, 67, 143, .5), rgba(125, 67, 143, 1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.academy-trainers-container > a{
+    color: #fff;
+    padding: 8px;
     font-family: 'SPP Bold';
+    background: rgba(125, 67, 143, .1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px 0;
+    transition: 0.2s;
+}
+.academy-trainers-container > a:hover{
+    background: rgba(125, 67, 143, .2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.academy-teams{
+    width: 100%;
+    height: 2.5cm;
+    background-image: url('../img/teams.jpg');
+    background-size: cover;
+    background-position: top;
+}
+.academy-teams-container{
+    height: 2.5cm;
+    width: 100%;
+    background: linear-gradient(to right, rgba(125, 67, 143, 1), rgba(125, 67, 143, .5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.academy-teams-container > div > span{
+    color: #fff;
+    display: inline-block;
+    padding: 4px;
+}
+.teams-nav > li{
+    padding: 4px;
+}
+.teams-nav > li > a{
+    color: #fff;
+    padding: 4px;
+    font-family: 'SPP Bold';
+    background: rgba(125, 67, 143, .1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px 0;
+    transition: 0.2s;
+    font-size: 12px;
+}
+.teams-nav > li > a:hover{
+    background: rgba(125, 67, 143, .2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+.gallery{
+
+    overflow: hidden;
+}
+.gallery-post{
+    margin-top: 8px;
+    height: 8cm;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.gallery-post-container{
+    height: 8cm;
+    background: linear-gradient(rgba(54, 54, 54, .1), rgba(54, 54, 54, 1));
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+}
+.gallery-post-container > a{
+    color: #fff;
+    font-family: 'SPP';
+}
+.section-title{
+    padding: 8px;
+    font-family: 'SPP Light';
+    color: #7d438f;
+    border-left: 4px solid rgba(125, 67, 143, .1);
+}
+
+.tv-main{
+    height: 10cm;
+    width: 100%;
+    background-image: url('../img/2.JPG');
+    background-size: cover;
+    background-position: center;
+}
+.tv-main-container{
+    background: linear-gradient(to left bottom, rgba(255, 255, 255, 0.2), rgba(125, 67, 143, 0.6), rgba(125, 67, 143, 1));
+    height: 10cm;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+}
+.tv-main-container > a{
+    color: #fff;
+    font-family: 'SPP Light';
     font-size: 32px;
+    width: 60%;
+}
+.tv-list{
+    height: 10cm;
+    background: linear-gradient(to top right, #7b4a8a, #7d438f, #b961d4);
+}
+.tv-list-container{
+    height: 10cm;
+    background-image: url('../img/green-dust-and-scratches.png');
+    overflow: scroll;
+}
+.tv-list-container > .row{
+    transition: .2s;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.tv-list-container > .row:nth-last-child(1){
+    border: none;
+}
+.tv-list-container > .row:hover{
+    background: rgba(255, 255, 255, .1)
+}
+.tv-list-container > .row a{
+    color: #fff;
+    font-size: 18px;
+}
+.tv{
+    margin-top: 8px;
+}
+
+.footer{
+    background: #7d438f;
+    background-image: url('../img/green-dust-and-scratches.png');
+}
+.sponsor{
+    text-align: center;
+}
+.sponsor > img{
+    width: 80px;
+    
+}
+.foot-text{
+    color: #fff;
 }
