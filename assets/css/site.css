@@ -32,8 +32,12 @@
 #site-header-title{
     color: #fff;
     font-family: 'SPP Bold';
-    font-size: 18px;
-    width: 280px;
+    font-size: 20px;
+}
+#site-header-title > span{
+    font-size: 16px;
+    margin-left:80px;
+    font-family: 'SPP Light';
 }
 .site-nav > li > a{
     padding: 16px;
