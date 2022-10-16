@@ -10,6 +10,20 @@
     font-family: 'SPP Light';
     src: url('../fonts/source-sans-pro.light.ttf');
 }
+
+@font-face {
+    font-family: 'Extra Bold';
+    src: url('../extra-fonts/FiraSansCompressed-Heavy.otf');
+}
+@font-face {
+    font-family: 'Extra Regular';
+    src: url('../extra-fonts/firasanscompressed-regular.otf');
+}
+@font-face {
+    font-family: 'Extra Def-Bold';
+    src: url('../extra-fonts/FiraSansCompressed-Bold.otf');
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -26,7 +40,8 @@ a{
 body{
     line-height: 1.5;
     font-size: 1em;
-    font-family: 'SPP';
+    font-family: 'Extra Regular';
+    letter-spacing: .8;
 }
 
 .block-container,
